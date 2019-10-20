@@ -1,31 +1,24 @@
-
-  
-
 # Docker ou Machine virtuelle ?
 
-  
 
 ![](dockerVS.png)
 
-  
 
-  
 
 ## Commande Basique
 
-  
 
 lister les containers :
-
-> **docker**  **ps**
-
-  
+```
+docker ps
+```
 
 Créer un container
 
 ```
 docker pull $name:$version 
 ```
+
 
 Lancer un container
 ```
@@ -46,7 +39,6 @@ Pour pallier à cela, pour garder la main sur le container
 ```
 docker run -di $name:$version
 ```
- 
 >**-d** : dettach
 
 >**-i** : interactive
