@@ -45,14 +45,23 @@ Lancer un container
 
 Pour pallier à cela, pour garder la main sur le container
 
->**docker run -di**
+>**docker run -di**  **$name:version$** 
 
-  
+ 
+>**-d** : dettach
 
->-d : dettach
+>**-i** : interactive
 
->-i : interactive
+>**--name**:  préciser le nom du container
 
->--name préciser le nom du container
+Avec cette method, le container se lancera et restera actif on peu le voir en listant les containers ou en listant tous les containers
 
->
+
+Se connecter à un container
+
+
+>**docker exec -ti** *name* **sh**
+
+>**-t**: TTY
+
+>**sh**: se connecter avec un shell
