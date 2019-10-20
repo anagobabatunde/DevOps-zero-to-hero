@@ -23,7 +23,7 @@ lister les containers :
 
 Créer un container
 
-> **docker**  **pull**  **$name:version$**
+> **docker**  **pull**  *$name:version$*
 
   
 
