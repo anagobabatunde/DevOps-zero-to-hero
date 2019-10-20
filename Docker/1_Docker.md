@@ -23,30 +23,29 @@ lister les containers :
 
 Créer un container
 
-> **docker**  **pull**  **$name:version$**
-
-  
+```
+docker pull $name:$version 
+```
 
 Lancer un container
+```
+docker run $name
+```
 
-> **docker run name**
+Malgré le docker run , on n'appercevra pas le container il faudrait éxécuter un
+```
+docker ps -a
+```
+>**-a** : ALL
 
-> malgré le docker run , on n'appercevra pas le container il faudrait éxécuter un
+Pour lister **TOUT** les containers même ceux qui ont le status exit
 
-> **docker ps -a (all)**
-
->pour lister **TOUT** les containers même ceux qui ont le status exit
-
-  
-
->lorsque l'on run le container il se exécute sa tâche et s'éteint automatiquement
-
-  
+Lorsque l'on run le container il se exécute sa tâche et s'éteint automatiquement
 
 Pour pallier à cela, pour garder la main sur le container
-
->**docker run -di**  **$name:version$** 
-
+```
+docker run -di $name:$version
+```
  
 >**-d** : dettach
 
@@ -59,9 +58,9 @@ Avec cette method, le container se lancera et restera actif on peu le voir en li
 
 Se connecter à un container
 
-
->**docker exec -ti** *name* **sh**
-
+```
+docker exec -ti $name sh
+```
 >**-t**: TTY
 
 >**sh**: se connecter avec un shell
