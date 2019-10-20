@@ -23,7 +23,7 @@ lister les containers :
 
 Créer un container
 
-> **docker**  **pull**  *$name:version$*
+> **docker**  **pull**  *name:version*
 
   
 
@@ -37,7 +37,7 @@ Lancer un container
 
 >pour lister **TOUT** les containers même ceux qui ont le status exit
 
-  
+
 
 >lorsque l'on run le container il se exécute sa tâche et s'éteint automatiquement
 
@@ -45,9 +45,9 @@ Lancer un container
 
 Pour pallier à cela, pour garder la main sur le container
 
->**docker run -di**  **$name:version$** 
+>**docker run -di**  *name:version* 
 
- 
+
 >**-d** : dettach
 
 >**-i** : interactive
