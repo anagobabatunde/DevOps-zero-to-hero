@@ -56,3 +56,20 @@ docker exec -ti $name sh
 >**-t**: TTY
 
 >**sh**: se connecter avec un shell
+
+Down un container
+```
+docker stop $nameOfContainer
+```
+
+Relancer un container déjà down
+```
+docker start $nameOfContainer
+```
+
+Supprimer un Container
+```
+docker rm -f $name
+```
+>**rm**: remove
+>**-f**: forcer le container même si il est lancé
